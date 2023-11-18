@@ -107,11 +107,19 @@ func main() {
 	}
 
 	score := jawabanBenar * 10;
+	var ket string
+
+	if score >= 70 {
+		ket = "Anda lulus dari PRIMAKARA!"
+	} else {
+		ket = "Anda tidak lulus dari PRIMAKARA"
+	}
 
 	fmt.Printf("Nama Peserta: %s \n", nama)
-	fmt.Printf("Total Score: %d \n", score)
 	fmt.Printf("Total Jawaban Benar = %d \n", jawabanBenar)
-	fmt.Printf("Total Jawaban Salah = %d", jawabanSalah)
+	fmt.Printf("Total Jawaban Salah = %d \n", jawabanSalah)
+	fmt.Printf("Total Score: %d \n", score)
+	fmt.Println(ket)
 
 
 }
