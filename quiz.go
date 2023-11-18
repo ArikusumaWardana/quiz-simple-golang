@@ -82,7 +82,7 @@ func main() {
 		{
 			soal: "Apa peristiwa sejarah yang menandai akhir Kekaisaran Romawi Barat pada tahun 476 M?",
 			option: []string{"Pertempuran Adrianople", "Invasi Viking", "Penaklukan Britania oleh Romawi", "Penyatuan Italia"},
-			jawaban: 4	,
+			jawaban: 4,
 		},
 	} 
 
