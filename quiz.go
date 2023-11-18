@@ -112,7 +112,7 @@ func main() {
 	if score >= 70 {
 		ket = "Anda lulus dari PRIMAKARA!"
 	} else {
-		ket = "Anda tidak lulus dari PRIMAKARA"
+		ket = "Anda tidak lulus dari PRIMAKARA!"
 	}
 
 	fmt.Printf("Nama Peserta: %s \n", nama)
