@@ -13,6 +13,7 @@ type question struct {
 	jawaban int
 }
 
+// Fungsi tampilkan soal
 func tampilkanSoal(q question) {
 	fmt.Println(q.soal)
 	for i, option := range q.option {
@@ -20,6 +21,7 @@ func tampilkanSoal(q question) {
 	}
 }
 
+// Fungsi cek jawaban
 func cekJawaban(jawabanUser int, JawabanBenar int) bool {
 	return jawabanUser == JawabanBenar
 }
@@ -33,6 +35,7 @@ func main() {
 	scanner.Scan()
 	nama := scanner.Text()
 
+	// Kumpulan soal dan jawaban
 	questions := []question {
 		{
 			soal: "Pada tahun berapa Perang Dunia I dimulai?",
@@ -86,6 +89,7 @@ func main() {
 		},
 	} 
 
+	// Variable untuk jawaban benar dan jawaban salah
 	jawabanBenar := 0
 	jawabanSalah := 0
 
@@ -109,6 +113,7 @@ func main() {
 	score := jawabanBenar * 10;
 	var ket string
 
+	// Mengecek apakah nilai lebih dari sama dengan 70 atau tidak
 	if score >= 70 {
 		ket = "Anda lulus dari PRIMAKARA!"
 	} else {
